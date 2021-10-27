@@ -39,14 +39,6 @@ class NatTestCase extends AnyFunSuite {
     assert((Zero - Zero) === Zero)
   }
 
-  test("zero minus one throws an error") {
-    new NatTest {
-      assertThrows[Error] {
-        Zero - one
-      }
-    }
-  }
-
   test("one isZero is false") {
     new NatTest {
       assert(!one.isZero)
@@ -74,12 +66,6 @@ class NatTestCase extends AnyFunSuite {
   test("one plus one is two") {
     new NatTest {
       assert((one + one) === two)
-    }
-  }
-
-  test("one minus zero is one") {
-    new NatTest {
-      assert((one - Zero) === one)
     }
   }
 
